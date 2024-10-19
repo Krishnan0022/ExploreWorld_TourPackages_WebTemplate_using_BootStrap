@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreWorld - Tour Packages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5dc; /* Soft beige color as fallback */
+      background-image: url('bg.jpg'); /* Path to your background image */
+      background-size: cover; /* Cover the entire body */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      background-attachment: fixed; /* Keep the background fixed on scroll */
+    }
+
+    .img-fluid {
+      height: 300px; /* Set a fixed height */
+      object-fit: cover; /* Maintain aspect ratio while covering the area */
+      width: 100%; /* Ensures the image takes full width of the column */
+    }
+
+    .nav-link {
+      color: inherit; /* Remove blue color from links */
+      text-decoration: none; /* Remove underline from links */
+    }
+
+    .nav-link:hover {
+      color: #007bff; /* Optional: Add hover color */
+    }
+   
+  </style>
+</head>
+<body>
+  <!-- Header with Logo, Navigation, Search Bar -->
+  <header class="p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="logo">ExploreWorld</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="tour.html">Tour Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+         
+        </ul>
+      </nav>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Exclusive Tour Packages Section -->
+  <section class="tour-package py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Exclusive Tour Packages</h2>
+      
+      <!-- Venice Tour Package -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <img src="venice.jpg" class="img-fluid" alt="Venice Tour">
+        </div>
+        <div class="col-md-6">
+          <h3>Venice Tour</h3>
+          <p>Experience the romantic canals of Venice with a detailed 5-day itinerary.</p>
+          <h4>Itinerary</h4>
+          <ul>
+            <li>Day 1: Arrival and Canal Tour</li>
+            <li>Day 2: Visit to St. Mark's Basilica</li>
+            <!-- More itinerary items -->
+          </ul>
+          <p><strong>Price:</strong> $2000</p>
+        </div>
+      </div>
+
+      <!-- Paris Tour Package -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <img src="paris.jpg" class="img-fluid" alt="Paris Tour">
+        </div>
+        <div class="col-md-6">
+          <h3>Paris Tour</h3>
+          <p>Explore the iconic landmarks of Paris with a delightful 4-day itinerary.</p>
+          <h4>Itinerary</h4>
+          <ul>
+            <li>Day 1: Arrival and Eiffel Tower Visit</li>
+            <li>Day 2: Louvre Museum Tour</li>
+            <li>Day 3: Montmartre and Sacré-Cœur</li>
+            <li>Day 4: Seine River Cruise</li>
+          </ul>
+          <p><strong>Price:</strong> $1800</p>
+        </div>
+      </div>
+
+      <!-- Bali Tour Package -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <img src="bali.jpg" class="img-fluid" alt="Bali Tour">
+        </div>
+        <div class="col-md-6">
+          <h3>Bali Tour</h3>
+          <p>Relax on the beautiful beaches of Bali with a comprehensive 6-day itinerary.</p>
+          <h4>Itinerary</h4>
+          <ul>
+            <li>Day 1: Arrival and Beach Day</li>
+            <li>Day 2: Ubud Rice Terraces and Monkey Forest</li>
+            <li>Day 3: Tanah Lot Temple Visit</li>
+            <li>Day 4: Water Sports at Nusa Dua</li>
+            <li>Day 5: Spa Day and Traditional Dinner</li>
+            <li>Day 6: Departure</li>
+          </ul>
+          <p><strong>Price:</strong> $2200</p>
+        </div>
+      </div>
+
+      <!-- New York Tour Package -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <img src="new-york.jpg" class="img-fluid" alt="New York Tour">
+        </div>
+        <div class="col-md-6">
+          <h3>New York Tour</h3>
+          <p>Discover the vibrant culture and attractions of New York City with a packed 5-day itinerary.</p>
+          <h4>Itinerary</h4>
+          <ul>
+            <li>Day 1: Arrival and Times Square Visit</li>
+            <li>Day 2: Statue of Liberty and Ellis Island</li>
+            <li>Day 3: Central Park and Museum Day</li>
+            <li>Day 4: Broadway Show and Dinner</li>
+            <li>Day 5: Departure</li>
+          </ul>
+          <p><strong>Price:</strong> $2300</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="py-3">
+    <div class="container text-center">
+      <p>&copy; 2024 ExploreWorld. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

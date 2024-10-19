@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreWorld - Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5dc; /* Soft beige color as fallback */
+      background-image: url('bg.jpg'); /* Path to your background image */
+      background-size: cover; /* Cover the entire body */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      background-attachment: fixed; /* Keep the background fixed on scroll */
+    }
+    .form-control {
+      background-color: #f0f8ff;
+    }
+
+    .btn-primary {
+      background-color: #2a4fe2;
+      border-color: #2a4fe2;
+    }
+
+    .btn-primary:hover {
+      background-color: #107eeb;
+      border-color: #107eeb;
+    }
+
+    h2 {
+      color: #333; /* Darker text color for better contrast */
+    }
+
+    /* Header link styles */
+    .nav-link {
+      color: black !important;
+    }
+
+    .nav-link:hover {
+      color: #555 !important; /* Slightly darker color on hover */
+    }
+
+    /* Footer text */
+    .footer p {
+      margin: 0;
+    }
+
+    /* Google Maps iframe styles */
+    .map-container {
+      position: relative;
+      height: 400px; /* Adjust height as needed */
+      margin-bottom: 20px; /* Space between map and form */
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0; /* Remove border */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="mb-0">ExploreWorld</h1>
+      <nav class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tour.html">Tour Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </nav>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Questions? We’ve Got Answers</h2>
+      
+      <!-- Google Maps iframe -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509429!2d144.95373531568143!3d-37.81720997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0e0f2d1b%3A0x1e04a7f20b5b1c93!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1616178663686!5m2!1sen!2sau" 
+          allowfullscreen="" 
+          loading="lazy"></iframe>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Your message here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer py-3">
+    <div class="container text-center">
+      <p>&copy; 2024 ExploreWorld. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (including Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
